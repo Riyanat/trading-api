@@ -1,0 +1,12 @@
+language: java
+install: skip
+os: linux
+dist: trusty
+jdk: oraclejdk11
+script:
+- "./gradlew build"
+deploy:
+  provider: heroku
+  app: rs-trading-api
+  api_key:
+    secure: epaWMz2jNMhhICSsUndYHuYndjDxrtrt9iF2w8JVUot5UVEwyEjs0BsYeLgargrZPMctfQRh0vxq/LG3/zHHaVQNN8TH3QtWiaUbQc6C4k+1mOjRJlPZ/rpSdbvcq5E/HjoJOcTgOM8aV7PNYTC1j96yA9pnpFTD5fME1uURKpdOCvMNxoXsCy96/nGSJmnpE6PukBOGtd07jzL35e6tRIiCvBXUMlPojAXc7TRfxTeK/+SC1V79408LVdHjjBjs5EU2Fju6cldNnPnl+H/lJR5cLgVR7HqZtb4FbJO1hvxJ0p3+2M9C+P7Eh1GB3n13u054ct+B+wTy1ThD7rETRMEIVWr5ydMOY7Fx8blN8udknVXo1n+4iW3cYS4su5dFMnX2UlZdP+AW10YaZYk1dcXGxJCmDQJOmVxYhZnay2RDfUonR6K2BtBjD0pq9sC+CvcJ9bYn1fXEpgEDQQe7uYhykIFadd57iwNilj8Yfsj0ddD6FvdjNGU5KNM+7lqtKByYSdujtTOKWXN14sSNcrZuUvc3dCNJQLgX9dLiT0Y6G3R43fts2EcsQeWlNP9TBpnaacDxjKwjTaDMPA8giQXy9XdHAsk1Tw7kAJCtXuXVffWKtvb3RhEYhyCY+atkj6mckynkSw7y+KNisQ5gs+Q0BORs25+u1LsiPDquPqA=
